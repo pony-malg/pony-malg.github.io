@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="boostrap/bootstrap.min.css">
     <style>
         .topBackground {
-            background-image: url("src/topImage.jpg");
-            background-size: 100% 130%;
-            height: 900px;
-            margin-top: -300px;
+            background-image: url("src/mice-duck.jpeg");
+            /* background-image: url("src/topImage.jpg"); */
+            background-size: 100% 100%;
+            height: 600px;
+            /* height: 900px; */
+            /* margin-top: -300px; */
             vertical-align: bottom;
             position: relative;
         }
@@ -28,10 +30,10 @@
         }
 
         .avadar {
-            background-image: url(src/dog.jpg);
+            background-image: url(src/gangan.jpg);
             background-size: 100%;
-            width: 6em;
-            height: 6em;
+            width: 200px;
+            height: 200px;
             margin: -95px 60px -45px auto;
             border-radius: 10px;
             float: right;
@@ -50,12 +52,36 @@
         .itemDate span {
             font-size: 16px;
         }
+
         .itemContainer {
             margin: 20px 15px;
         }
+
         .itemText {
             margin-top: 10px;
             font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+
+        .endLine {
+            color: gray;
+        }
+
+        .picture {
+            background-image: url(src/cat.jpg);
+            /* background-image: url(src/dog.jpg); */
+            background-size: 100%;
+            width: 193px;
+            height: 193px;
+            cursor: pointer;
+        }
+
+        .modal-content {
+            height: 600px;
+            width: 600px;
+            background-size: 100% 100%;
+        }
+        .address {
+            color: rgb(15, 113, 146);
         }
     </style>
 </head>
@@ -64,45 +90,80 @@
     <div class="container" style="background-color: #fff;">
         <div class="row topBackground">
             <div class="bottomDiv">
-                <span>Jack Ma</span>
+                <span>敢敢&emsp;</span>
                 <div class="avadar"></div>
             </div>
         </div>
         <div class="row content">
-            <p style="text-align: right;color: gray;margin-right: 60px; font-size: 20px;">Linux 就该这么学</p>
+            <p style="text-align: right;color: gray;margin-right: 60px; font-size: 20px;">今天也要快乐鸭 </p>
             <div class="itemContainer">
                 <h1>2023年</h1>
                 <div class="row">
                     <div class="col-sm-1">
                         <p class="itemDate">11<span>5月</span></p>
+                        <p class="address">洛阳·龙门石窟</p>
                     </div>
                     <div class="col-sm-10">
-                        <p class="itemText">today is May 10rd, I want to go to gym, but I can't , because I need to do this page , It's mean nothing , just think it's cool, and another reason is that I never post any message since 2018, so this page will be a substitute of moments of wechat... <br> emm... I hope you can take it easy  , everything will be ok, there are so many trouble in our road of life ,but it always be this, we can't change the world ,we can't made the rule , interrupt me ,I heard a word is that "no money no honey" , lol , it's so dang right!!! </p>
-                        <p class="itemText">hello nice to meet you <br> 生活就像一盒巧克力，你不知道将要拿出的是什么口味 </p>
-                        <p class="itemText">hello nice to meet you <br> 生活就像一盒巧克力，你不知道将要拿出的是什么口味 </p>
+                        <p class="itemText">hello nice to meet you <br> 生活就像一盒巧克力<br>你不知道将要拿出的是什么口味 </p>
                     </div>
                 </div>
             </div>
             <div class="itemContainer">
                 <div class="row">
                     <div class="col-sm-1">
-                        <p class="itemDate">11<span>5月</span></p>
+                        <p class="itemDate">10<span>5月</span></p>
                     </div>
-                    <div class="col-sm-10">
-                        <p class="itemText">当我走回去的时候，发现天黑了</p>
+                    <div class="col-sm-2">
+                        <div class="row">
+                            <div class="picture"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="itemText">复杂的事情简单做</p>
                     </div>
                 </div>
             </div>
             <div class="itemContainer">
                 <div class="row">
                     <div class="col-sm-1">
-                        <p class="itemDate">11<span>5月</span></p>
+                        <p class="itemDate">&nbsp;&nbsp;9<span>5月</span></p>
                     </div>
-                    <div class="col-sm-10">
-                        <p class="itemText">hello nice to meet you </p>
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <div class="col-sm-6 picture"></div>
+                            <div class="col-sm-6 picture"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 picture"></div>
+                            <div class="col-sm-6 picture"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="itemText">简单的事情重复做</p>
                     </div>
                 </div>
             </div>
+            <div>
+                <br>
+                <p style="text-align: center;"><span class="endLine">——</span>朋友仅展示最近三天的朋友圈<span
+                        class="endLine">——</span></p>
+            </div>
+
+            <div style="height: 180px;"></div>
+        </div>
+        <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="border: none;">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
         </div>
     </div>
     <script src="jquery/jquery.min.js"></script>
@@ -110,7 +171,33 @@
     <script>
         $(function () {
 
+            gotoMobilePage();
+
+            let images = ["src/anotherAnimal.jpg", "src/bear.jpg", "src/fiveDog.jpg", "src/lepard.jpg", "src/someanimal.jpg"];
+
+            for (let i = 0; i < images.length; i++) {
+
+            }
+            // $('.picture').css("background-image",`url(${images[0]})`)
+            // console.log($('.picture'),typeof $('.picture'));
+            let index = 0
+            for (const obj of $('.picture')) {
+                $(obj).css("background-image", `url(${images[index++]})`)
+            }
+            $('.picture').attr('data-toggle','modal')
+            $('.picture').attr('data-target','#myModal')
+
+            $('.picture').on('click',function(){
+                console.log($(this).attr('background-image'));
+                $('.modal-content').attr('style',$(this).attr('style'))
+            })
         })
+        function gotoMobilePage() {
+            if (navigator.userAgent.match(/Mobi/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)) {
+                window.location.href = "phonePage.html";
+            }
+        }
+
     </script>
 </body>
 
